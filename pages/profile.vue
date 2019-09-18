@@ -19,8 +19,16 @@
     <p>
       <b>Email verified:</b> {{ profile.email_verified }}
     </p>
+
+    <div id="qrcode"></div>
   </div>
 </template>
+
+<script>
+export default {
+  
+}
+</script>
 
 <style>
 #profile-page {
