@@ -23,7 +23,7 @@ export const mutations = {
 
 export const actions = {
   nuxtServerInit ({ commit }, { req }) {
-    if (process.server && req.headers.cookie) {
+    if (process.server && req && req.headers.cookie) {
       const cookies = require('cookieparser').parse(req.headers.cookie)
       const accessToken = cookies._tkn
       const idToken = cookies._itkn
