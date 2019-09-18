@@ -1,24 +1,14 @@
 export const state = () => ({
   auth: null,
-  profile: null
 })
 
 export const mutations = {
   setAuth (state, payload) {
     state.auth = payload
   },
-
-  setProfile (state, payload) {
-    state.profile = payload
-  },
-
   resetAuth (state) {
     state.auth = null
   },
-
-  resetProfile (state) {
-    state.profile = null
-  }
 }
 
 export const actions = {
