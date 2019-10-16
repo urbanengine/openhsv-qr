@@ -7,7 +7,4 @@ RUN mkdir ${SRC_DIR}
 WORKDIR ${SRC_DIR}
 VOLUME ${SRC_DIR}
 
-# Expose port 3000
-EXPOSE 3000
-
 CMD ["/bin/bash"]
